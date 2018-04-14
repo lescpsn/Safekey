@@ -1,3 +1,9 @@
+** 运行
+#+BEGIN_EXAMPLE
+python main.py
+服务的默认端口暂且为：8080
+#+END_EXAMPLE
+
 ** 参考资料
 + tornado
 #+BEGIN_EXAMPLE
