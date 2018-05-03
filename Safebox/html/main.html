@@ -1,104 +1,35 @@
 ﻿<!doctype html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Document</title>
-
+		<title>私密箱</title>
 		<link href="lib/system/system.css" rel="stylesheet" type="text/css"/>
 		<link href="css/mian.css" rel="stylesheet" type="text/css"/>
-		<!-- 1180*750 -->
 	</head>
-
-<style>
-
-
-
-/*标题栏*/
-#header{
-	position:absolute;
-	top:0px;
-	left:0px;
-	height:28px;
-	width:100%;
-	background:rgb(52,152,220);
-	cursor:default;
-}
-
-#header .title-bar{
-    margin-right:75px;
-    padding-left:10px;
-    height:28px;
-    line-height: 28px;
-    font-size:9pt;
-    color:#eee;
-}
-
-#header .ctrls{
-	width:75px;
-	height:28px;
-	float:right;
-}
-
-#header .ctrls a{
-	display:block;
-	float:left;
-	height:14px;
-	font-family:"Marlett";
-	font-size:14px;
-	padding:4px;
-	color:#fff;
-	cursor:default;
-}
-
-#header .ctrls a[id]:hover{
-    background:#6ebccf;
-}
-
-#header .ctrls a[id]:active{
-    background:#FF0000;
-}
-
-</style>
-
-
-<body>
-	<div id="header">
-		<div class="ctrls">
-			<a id="window-min" onclick="windowCommand('min')">0</a>
-        	<a id="window-max" onclick="this.innerText = windowCommand('max')?'2':'1';">1</a>
-        	<a id="window-close" onclick="windowCommand('close')">r</a>
+	<body>
+		<div id="header">
+			<div class="ctrls">
+				<a id="window-min" onclick="windowCommand('min')">0</a>
+				<a id="window-max" onclick="this.innerText = windowCommand('max')?'2':'1';">1</a>
+				<a id="window-close" onclick="windowCommand('close')">r</a>
+			</div>
+			<div class="title-bar" onmousedown="windowCommand('drag')"> <span class=title> 我 的 软 件 </span></div>
 		</div>
-		<div class="title-bar" onmousedown="windowCommand('drag')"> <span class=title> 我 的 软 件 </span></div>
-	</div>
-
-
-		<div class="body">
-			<div class="top">
-				<div class="header">
-					<div class="header-left">
-						<div class="head-logo">
-							<img src="images/logo.png"/>
-						</div>
-						<div class="head-ver">
-							企业版 V1.0.1
+			<div class="body2">
+				<div class="top">
+					<div class="header">
+						<div class="header-left">
+							<div class="head-logo">
+								<img src="images/logo.png"/>
+							</div>
+							<div class="head-ver">
+								企业版 V1.0.1
+							</div>
 						</div>
 					</div>
-					<div class="header-right">
-						<div class="ctrls">
-							<a id="window-min" onclick="windowCommand('min')">0</a>
-							<a id="window-max" onclick="this.innerText = windowCommand('max')?'2':'1';">1</a>
-							<a id="window-close" onclick="windowCommand('close')">r</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="menu-box">
-
 				</div>
 			</div>
-		</div>
-</body>
+	</body>
 </html>
